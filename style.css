@@ -6,7 +6,264 @@
     padding: 0;
     font-family: 'Gothic A1', sans-serif;
 }
-
+@media (min-width: 1281px){
+    .container .nav-bar{
+        display: none;
+    }
+    .container #nav-bar-desktop{
+        display: block;
+    }
+    .container .hero .lateral-box{
+        display: none;
+    }
+    .container .informacion{
+        display: none;
+    }
+    .container .tarifas .mapa img#mapa{
+        display: none;
+    }
+    .container .nav-bar-desktop{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "logo menu";
+        height: 22vh;
+        padding: 20px 30px;
+    }
+    .container .nav-bar-desktop figure{
+        grid-area: logo;
+        align-self: center;
+    }
+    .container .nav-bar-desktop ul{
+        grid-area: menu;
+        align-self: center;
+        font-size: 16pt;
+        justify-self: end;
+    }
+    .container .nav-bar-desktop ul li{
+        list-style: none;
+        display: inline;
+        margin: 0px 40px;
+    }
+    .container .hero{
+        background: url(/Imagenes/taxi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 950px;
+        background-position: bottom;
+        display: grid;
+        grid-template-columns: repeat(5,20%);
+        grid-template-rows: repeat(4,25%);  
+    }
+    .container .hero .lateral-box-desktop{
+        display: block;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background: #f7b617;
+        color: white;
+        padding: 25px 22px 25px 48px;
+    }
+    .container .hero .lateral-box-desktop p:nth-child(1),
+    .container .hero .lateral-box-desktop p:nth-child(2){
+        font-size: 35pt;
+    }
+    .container .hero .lateral-box-desktop p:nth-child(3){
+        font-size: 22pt;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .container .hero .lateral-box-desktop .or{
+        text-align: center;
+        font-size: 14pt;
+    }
+    .container .hero .lateral-box-desktop .register{
+        background: white;
+        border: none;
+        border-radius: 5px;
+        height: 6vh;
+        width: 10vw;
+        font-size: 18pt;
+       
+    }
+    .container .hero .lateral-box-desktop .driver{
+        background: white;
+        border: none;
+        border-radius: 5px;
+        height: 6vh;
+        width: 40vh;
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 45px;
+    }
+    .container .hero .lateral-box-desktop .left-line{
+        width: 170px;
+        margin-left: 4%;
+        margin-right: 50%;
+        background-color: white;
+        color: white;
+       
+    }
+    .container .hero .lateral-box-desktop .right-line{
+        width: 170px;
+        margin-right: 0%;
+        margin-left: 75%;
+        background-color: white;
+        color: white;
+    }
+    .container .informacion-desktop{
+        background: #f7b617;
+        padding: 55px 250px 56px 0px;
+    }
+    .container .informacion-desktop .border{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "img txt";
+    }
+    .container .informacion-desktop .border{
+        border-style: solid solid solid none;
+        border-color: white;
+        border-width: 1px;
+        padding-left: 100px;
+    }
+    .container .informacion-desktop .border figure{
+        grid-area: img;
+        height: 510px;
+        margin: 50px 0px;
+    }
+    .container .informacion-desktop .border figure img{
+        height: 500px;
+    }
+    .container .informacion-desktop .border .text{
+        grid-area: txt;
+        align-self: center;
+        color: white;
+        padding-right: 245px;
+    }
+    .container .informacion-desktop .border .text h3{
+        font-size: 27pt;
+        margin-bottom: 25px;
+    }
+    .container .informacion-desktop .border .text p{
+        font-size: 20pt;
+        margin-bottom: 40px;
+    }
+    .container .conductor{
+        background: url(/Imagenes/conduce.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 620px;
+        display: grid;
+        grid-template-columns: 70% 30%;    
+        color: white;    
+    }
+    .container .conductor .conduce{
+        grid-column-start: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 150px 30px;
+    }
+    .container .conductor .conduce h3{
+        font-size: 27pt;
+        margin-bottom: 10px;
+    }
+    .container .conductor .conduce p{
+        font-size: 17pt;
+        margin-bottom: 20px;
+    }
+    .container .conductor .conduce button{
+        background: #f7b617;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        height: 5vh;
+        width: 18vw;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+    .container .tarifas{
+        background: #f7b617;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "location map"
+    }
+    .container .tarifas .direcciones{
+        grid-area: location;
+        color: white;
+        padding: 100px;
+        align-self: center;
+    }
+    .container .tarifas .mapa{
+        grid-area: map;
+        margin: 50px 0px;
+    }
+    .container .tarifas .direcciones h3{
+        font-size: 24pt;
+        margin-bottom: 15px;
+    }
+    .container .tarifas .direcciones p{
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    .container .tarifas .direcciones p input{
+        background: #f7b617;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        border-radius: 6px;
+        margin-left: 25px;
+        margin-bottom: 5px;
+        width: 25vw;
+        height: 5vh;
+    }
+    .container .tarifas .direcciones p button{
+        background: #ffffff;
+        border: none;
+        border-radius: 6px;
+        height: 6vh;
+        width: 20vh;
+        font-size: 12pt;
+        margin: 0px 180px;
+    }
+    .container .tarifas .mapa img{
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        padding: 15px;
+        height: 650px;
+        width: 650px;
+    }
+    .container .footer{
+        background: #2b2b2b;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 20% 60% 20%;
+        grid-template-areas: "header header header header"
+                             "redes list1 list2 stores"  
+                             "foot foot foot foot";
+                             height: 850px;
+        color: white; 
+    }
+    .container .footer .header-footer{
+        grid-area: header;
+    }
+    .container .footer links{
+        grid-area: list1;
+    }
+    .container .footer .links2{
+        grid-area: list2;
+    }
+    .container .footer .redes{
+        grid-area: redes;
+    }
+    .containes .footer .stores{
+        grid-area: stores;
+    }
+    .container .footer .header-footer img{
+        height: 35px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
 .container{
     display: grid;
     grid-template-columns: 5% repeat(5,auto);
@@ -22,7 +279,7 @@
 .container .nav-bar{
     grid-area: nav-bar;
     background-color: #ffffff;
-    display:flex;
+    display:block;
     justify-content: start;
     margin-bottom: 25px;
 }
@@ -49,7 +306,8 @@
     grid-template-rows: 25% 25% 25% 25%;
                           
 }
-.container .hero .caja-lateral{
+.container .hero .lateral-box{
+    display: block;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start:2;
@@ -57,18 +315,18 @@
     background: #f7b617;
     padding: 75px 25px;
 }
-.container .hero .caja-lateral p{
+.container .hero .lateral-box p{
     color: white;
     font-size: 16pt;
     margin-bottom: 5px;
 }
-.container .hero .caja-lateral button{
+.container .hero .lateral-box button{
     color: black;
     font-size: 11pt;
     background: whitesmoke;
     height: 5vh;
     width: 40vw;
-    border-radius: 5px;
+    border-radius: 6px;
     border: none;
 }
 .container .informacion{
@@ -106,7 +364,7 @@
     color: white;
     background: #f7b617;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     height: 40px;
     width: 184px;
     font-size: 10pt;
@@ -154,7 +412,7 @@
     height: 4vh;
     width: 20vh;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 10px;
 }
 .container .tarifas .mapa{
@@ -235,4 +493,14 @@
 }
 .container .footer .footer-footer p{
     margin-top: 10px;
+}
+.container .nav-bar-desktop{
+    display: none;
+}
+.container .tarifas .mapa img#mapa2{
+    display:none;
+}
+.container .footer .main-footer .second-list{
+    display: none;
+}
 }
