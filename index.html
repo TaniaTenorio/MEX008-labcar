@@ -13,7 +13,7 @@
     <div class= "container">
         <div class="nav-bar">
             <button><i class="fas fa-bars"></i></button>
-            <img src="./Imagenes/logo.png" alt="Logo Labcar">
+            <img src="/Imagenes/logo.png" alt="Logo Labcar">
         </div>
 
         <div class="nav-bar-desktop" id="nav-bar-desktop">
@@ -21,8 +21,27 @@
             <ul>
                 <li>Viaja</li>
                 <li>Conduce</li>
-                <li>Inicia Sesión</li>
+                <li id="logIn">Inicia Sesión</li>
             </ul>
+        </div>
+
+        <div class="modal-login" id="modal-login">
+            <div class="modal-login-content">
+                <span class="close">&times;</span>
+                <div>
+                    <figure>
+                        <img src="/Imagenes/usuario.png" alt="Foto de Usuario">
+                    </figure>
+                </div>
+                <div class="login-data">
+                    <p class="text"><i class="fas fa-user"></i><input type="text" placeholder="Username" name="user-name" id="user-name"></p>
+                    <p class="text"><i class="fas fa-lock"></i><input type="text" placeholder ="Password" name="user-password" id="user-password"></p>
+                    <p><button>LOG IN</button></p>
+                    <p>Forgot Password? <a href="#">Click Here</a></p>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="hero">
@@ -45,7 +64,7 @@
         <div class="informacion">
             <div class="imagen">
                 <h3>La nueva app</h3>
-                <img src="./Imagenes/celular.png" alt="Imagen celular">
+                <img src="/Imagenes/celular.png" alt="Imagen celular">
             </div>
             <p>Llega a tu destino aún más rápido</p>
         </div>
@@ -101,7 +120,7 @@
                 <ul>
                     <li>Oportunides</li>
                     <li>Nuestra Historia</li>
-                    <li>API de Labcar</li>
+                    <li>API de LabCar</li>
                     <li>Eventos</li>
                     <li>Desarrolladores</li>
                     <li>Servicios</li>
@@ -130,5 +149,6 @@
         </footer>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
